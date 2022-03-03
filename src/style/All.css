@@ -1,0 +1,351 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  border: 1px solid white;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.navbar {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: white;
+  color: black;
+}
+.logo {
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 75%;
+}
+.home li {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 5px 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+ul {
+  /* border: 1px solid violet; */
+  margin-top: 10px;
+}
+.home:hover {
+  text-decoration: none;
+}
+.mobile-menu-icon {
+  display: none;
+}
+.intro {
+  border: 1px solid #005469;
+  padding: 7rem;
+  text-align: center;
+  background-color: #005469;
+  color: white;
+}
+.intro h5 {
+  margin-top: 2rem;
+}
+.button button {
+  border: 1px solid white;
+  margin-top: 30px;
+  width: 15rem;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.sec-one {
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+}
+.div1 h2 {
+  margin-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.div1 p {
+  text-align: center;
+  margin-top: -7rem;
+  padding: 8rem;
+  color: gray;
+}
+.grid-one {
+  border: 1px solid whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: -8rem;
+  padding: 3rem;
+}
+.grid1 {
+  border: 1px solid whitesmoke;
+  text-align: start;
+}
+.grid1 p {
+  text-align: start;
+  margin-top: 1.5rem;
+  color: grey;
+}
+.grid1 button {
+  border: 1px solid #005469;
+  margin-top: 1rem;
+  width: 10rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #005469;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+.grid2 {
+  border: 1px solid whitesmoke;
+  margin-left: 4rem;
+}
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  color: grey;
+}
+.grid11 {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.project {
+  border: 1px solid white;
+  text-align: center;
+}
+.project h2 {
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+.project p {
+  text-align: center;
+  margin-top: -7rem;
+  padding: 8rem;
+  color: gray;
+}
+.contact {
+  border: 1px solid #005469;
+  background-color: #005469;
+  text-align: center;
+  color: white;
+  padding: 4rem;
+}
+.contact h2 {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.contact p {
+  text-align: center;
+  margin-top: -7rem;
+  padding: 8rem;
+}
+.form {
+  border: 1px solid white;
+  background-color: white;
+  margin-top: -6rem;
+  padding: 4rem;
+  text-align: start;
+  color: black;
+  border-radius: 5px;
+}
+.form input,
+.form textarea {
+  background-color: rgb(231, 231, 231);
+  color: gray;
+  padding: 1.5rem;
+}
+.form button {
+  border: 1px solid #005469;
+  margin-top: 1rem;
+  width: 10rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #005469;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+.sec-two {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 4rem;
+  text-align: justify;
+}
+.sec-three {
+  border: 1px solid black;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.sec-four h5,
+.sec-five h5 {
+  text-transform: uppercase;
+}
+.sec-five {
+  border: 1px solid black;
+  margin-right: -25rem;
+  text-align: end;
+}
+.icons {
+  border: 1px solid black;
+  color: white;
+  width: fit-content;
+  padding: 3.5px;
+}
+.icons:hover {
+  color: white;
+}
+.hor {
+  border: 1px solid grey;
+}
+.small {
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    border: 1px solid white;
+  }
+  .navbar ul {
+    border: 1px solid white;
+    margin-top: -15px;
+  }
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: white;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .home li {
+    text-align: end;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    top: 19px;
+    right: 25px;
+  }
+  .intro {
+    /* border: 1px solid red; */
+    padding: 1rem;
+  }
+  .intro h1 {
+    margin-top: 40px;
+  }
+  .intro h5 {
+    margin-top: 1rem;
+    padding: 10px;
+    text-align: justify;
+  }
+  .button {
+    margin-bottom: 2rem;
+  }
+  .div1 p {
+    padding: 2rem;
+    margin-top: 5px;
+    text-align: justify;
+  }
+  .grid-one {
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .grid1 {
+    text-align: center;
+  }
+  .grid1 p {
+    text-align: justify;
+  }
+  .grid2 {
+    margin-top: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .project p {
+    border: 1px solid white;
+    margin-top: -1.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  .contact {
+    padding: 25px;
+  }
+  .contact p {
+    margin-top: 1rem;
+    text-align: justify;
+    padding: 0.5rem;
+  }
+  .form {
+    margin-top: 2rem;
+    padding: 25px;
+    margin-bottom: 2rem;
+  }
+  .sec-two {
+    padding: 25px;
+  }
+  .sec-three {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .sec-five {
+    width: fit-content;
+  }
+  .sec-five h5{
+    text-align: start;
+  }
+  .icons {
+    width: fit-content;
+  }
+  .small{
+    margin-bottom: 1rem;
+  }
+}
